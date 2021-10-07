@@ -1,8 +1,13 @@
 @font-face {font-family: BubbleGumSS; src: url('BUBBS.TTF');}
 @font-face {font-family: fancy; src: url('JosefinSans-VariableFont_wght.ttf');}
+@font-face {font-family: SpriteGReg; src: url('SpriteGraffiti-Regular.ttf');}
+@font-face {font-family: SpriteGShad; src: url('SpriteGraffiti-Shadow.ttf');}
 
 head{text-align: center;}
 body{text-align:center;background-color:#0437f2;}
-h1{color:white;font-family:BubbleGumSS;font-size:74px;}
-h2{color:white;font-family:fancy;font-size:20px;}
-p{color:white; font-family:fancy;font-size:55px;}
+.p5{color:white;font-family:BubbleGumSS;}
+.fancy{color:white;font-family:fancy;font-size:25px;}
+.spriteGR{color:white;font-family:SpriteGReg;font-size:50px;}
+.spriteGS{color:white; font-family:SpriteGShad;}
+#head {font-size:50px;}
+#tilt {font-size:25px;}
