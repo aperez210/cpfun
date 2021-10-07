@@ -1,0 +1,9 @@
+@font-face {font-family: BubbleGumSS; src: url('BUBBS.TTF');}
+@font-face {font-family: P5Date; src: url('DATE.ttf');}
+
+head{text-align: center;}
+body{text-align:center;background-color:#FF0505;}
+h1{color:black;font-family:BubbleGumSS;font-size:74px;}
+h2{color:black;font-family:Luminari;font-size:20px;}
+h3{color:white; font-family: P5Date;font-size:55px;text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;border: 1px;}
+.rotate{}
