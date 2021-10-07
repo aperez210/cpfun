@@ -1,6 +1,8 @@
 
 function button(){
-        document.getElementById("crooked").rotate(45);
+        var e = document.getElementById("tilt");
+        e.rotate(180);
+        e.innerHTML = "WHY DID YOU DO THIS?!";
 }
 Object.prototype.rotate = function(d)
 {
@@ -23,8 +25,7 @@ document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 function theDomHasLoaded(e) {
     var d = new Date();
     var curr_date = d.getDate();
-    var curr_month = d.getMonth() + 1; //months are zero based
+    var curr_month = d.getMonth() + 1;
     var curr_year = d.getFullYear();
-    //document.write(curr_date + "-" + curr_month + "-" + curr_year);
-    document.getElementById("date").innerHTML = (curr_date + "/" + curr_month);
+    document.getElementById("date").innerHTML = (curr_month + "/" + curr_date);
 }
