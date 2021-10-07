@@ -4,10 +4,13 @@
 @font-face {font-family: SpriteGShad; src: url('SpriteGraffiti-Shadow.ttf');}
 
 head{text-align: center;}
-body{text-align:center;background-color:#0437f2;}
+hr{padding: 0;}
+body{text-align:center;background-color:#0437f2;margin:0;}
 .p5{color:white;font-family:BubbleGumSS;}
-.fancy{color:white;font-family:fancy;font-size:25px;}
-.spriteGR{color:white;font-family:SpriteGReg;font-size:50px;}
+.fancy{color:white;font-family:fancy;font-size:}
+.spriteGR{color:white;font-family:SpriteGReg;}
 .spriteGS{color:white; font-family:SpriteGShad;}
-#head {font-size:50px;}
-#tilt {font-size:25px;}
+#head {padding-top:25px;padding-bottom:0px;color:#0437f2;font-size:75px;background:white;}
+#date {color:#0437f2;padding-top:0px;font-size:85px;background:white;}
+#clock {color:#0437f2;font-size:50px;background:white;}
+#tilt {font-size:50px;}
