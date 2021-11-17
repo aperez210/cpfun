@@ -3,10 +3,7 @@ const cards = [ "s2","s3","s4","s5","s6","s7","s8","s9","sA","sB","sC","sD","sE"
                 "h2","h3","h4","h5","h6","h7","h8","h9","hA","hB","hC","hD","hE",
                 "d2","d3","d4","d5","d6","d7","d8","d9","dA","dB","dC","dD","dE"];
 
-shuffle
-printCards(cards);
-draw();
-printCards(cards);
+shuffle();
 
 let hands = drawPoker();
 function shuffle()
@@ -29,15 +26,41 @@ function drawPoker()
 
 function draw()
 {
-    shuffle();
     var e = document.getElementById("tilt");
     var card = cards.shift();
 
-    //getCardName(card);
-
     e.innerHTML = getCardName(card);
-    document.getElementById("card").src="cards/"+card+".svg";
+    cardDisplay(card,"card")
+    enemyDraw(card);
     return getCardName(card);
+}
+function enemyDraw(player)
+{
+    var e = document.getElementById("enemy");
+    var f = document.getElementById("outcome");
+    var card = cards.shift();
+    var enemyPower = parseInt(card.slice(1),16);
+    var playerPower = parseInt(player.slice(1),16);
+
+    if(playerPower>enemyPower)
+    {
+        f.innerHTML = "winner!";
+    }else if(playerPower == enemyPower)
+    {
+        f.innerHTML = "tie!"
+    }else{
+        f.innerHTML = "loser!";
+    }
+    e.innerHTML = getCardName(card);
+    cardDisplay(card,"enemy")
+    return card;
+}
+
+
+function cardDisplay(card,id)
+{
+    document.getElementById(id).src="cards/"+card+".svg";
+
 }
 
 function getRandomInt(max) {
