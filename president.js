@@ -32,9 +32,11 @@ function draw()
     shuffle();
     var e = document.getElementById("tilt");
     var card = cards.shift();
+
     //getCardName(card);
 
     e.innerHTML = getCardName(card);
+    document.getElementById("card").src="cards/"+card+".svg";
     return getCardName(card);
 }
 
@@ -115,7 +117,7 @@ function printCards(array)
 {
     for(var i = 0; i < array.length; i++)
     {
-        process.stdout.write(array[i] + ", ");
+        console.log(array[i] + ", ");
         if(i == 13 || i == 26 || i == 39 || i == 52)
         {
             console.log();
