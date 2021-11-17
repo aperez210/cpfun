@@ -12,7 +12,20 @@ body{text-align:center;background-color:#0437f2;margin:0;}
 .hippo{color:white;font-family:Hippo;font-size:}
 .spriteGR{color:white;font-family:SpriteGReg;}
 .spriteGS{color:white; font-family:SpriteGShad;}
+
 .block {margin:auto;font-family:Hippo;color:#0437f2;display: block; width: 50%;border: none; background-color: #white;padding: 20px 60px;font-size: 16px; cursor: pointer; text-align: center;}
+.button {
+  background-color: white;
+  border: none;
+  color: #0437f2;
+  padding: 30px 76px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
 #vs{font-size:60px;font-family:Hippo; min-height: 400px;color: white;align-items: center;vertical-align: middle;}
 #outcome{font-size:60px;}
 #scoreCard{background:white;font-size:15px;color: #0437f2}
@@ -21,3 +34,4 @@ body{text-align:center;background-color:#0437f2;margin:0;}
 #date {color:#0437f2;padding-top:0px;font-size:65px;background:white;}
 #clock {color:#0437f2;font-size:50px;background:white;}
 #tilt {font-size:50px;}
+#rounded {  border-radius: 25px;  background: #73AD21;  padding: 20px;  width: 200px;  height: 150px;}
