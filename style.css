@@ -2,15 +2,22 @@
 @font-face {font-family: fancy; src: url('JosefinSans-VariableFont_wght.ttf');}
 @font-face {font-family: SpriteGReg; src: url('SpriteGraffiti-Regular.ttf');}
 @font-face {font-family: SpriteGShad; src: url('SpriteGraffiti-Shadow.ttf');}
+@font-face {font-family: Hippo; src: url('Hippocalypse.ttf');}
 
 head{text-align: center;}
 hr{padding: 0;}
 body{text-align:center;background-color:#0437f2;margin:0;}
 .p5{color:white;font-family:BubbleGumSS;}
 .fancy{color:white;font-family:fancy;font-size:}
+.hippo{color:white;font-family:Hippo;font-size:}
 .spriteGR{color:white;font-family:SpriteGReg;}
 .spriteGS{color:white; font-family:SpriteGShad;}
-#head {padding-top:25px;padding-bottom:0px;color:#0437f2;font-size:75px;background:white;}
-#date {color:#0437f2;padding-top:0px;font-size:85px;background:white;}
+.block {margin:auto;font-family:Hippo;color:#0437f2;display: block; width: 50%;border: none; background-color: #white;padding: 20px 60px;font-size: 16px; cursor: pointer; text-align: center;}
+#vs{font-size:60px;font-family:Hippo; min-height: 400px;color: white;align-items: center;vertical-align: middle;}
+#outcome{font-size:60px;}
+#scoreCard{background:white;font-size:15px;color: #0437f2}
+#score{padding-top:5px;padding-bottom:0px;color:#0437f2;font-size:40px;background:white;}
+#head {padding-top:25px;padding-bottom:0px;color:#0437f2;font-size:55px;background:white;}
+#date {color:#0437f2;padding-top:0px;font-size:65px;background:white;}
 #clock {color:#0437f2;font-size:50px;background:white;}
 #tilt {font-size:50px;}

@@ -4,8 +4,11 @@ const cards = [ "s2","s3","s4","s5","s6","s7","s8","s9","sA","sB","sC","sD","sE"
                 "d2","d3","d4","d5","d6","d7","d8","d9","dA","dB","dC","dD","dE"];
 
 shuffle();
+var wins = 0;
+var ties = 0;
+var loses = 0;
 
-let hands = drawPoker();
+//let hands = drawPoker();
 function shuffle()
 {
     for(var j = 0; j < 52; j++)
@@ -23,15 +26,23 @@ function drawPoker()
     }
     return hand;
 }
+function score()
+{
+    document.getElementById("scoreCard").innerHTML = "Score:"
+    var score = document.getElementById("score")
+    score.innerHTML= (wins + "/" + loses + "/" + ties);
+}
 
 function draw()
 {
     var e = document.getElementById("tilt");
     var card = cards.shift();
 
+
     e.innerHTML = getCardName(card);
     cardDisplay(card,"card")
     enemyDraw(card);
+    score();
     return getCardName(card);
 }
 function enemyDraw(player)
@@ -44,12 +55,18 @@ function enemyDraw(player)
 
     if(playerPower>enemyPower)
     {
+        f.style.color = "#66FF33";
         f.innerHTML = "winner!";
+        wins++;
     }else if(playerPower == enemyPower)
     {
+        f.style.color = "yellow";
         f.innerHTML = "tie!"
+        ties++;
     }else{
+        f.style.color = "red";
         f.innerHTML = "loser!";
+        loses++;
     }
     e.innerHTML = getCardName(card);
     cardDisplay(card,"enemy")

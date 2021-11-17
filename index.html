@@ -6,20 +6,23 @@
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="favicon.png">
 
-        <div class="p5" id="head">Alex Perez</div>
+        <div class="p5" id="head">Card Games Online</div>
         <div class="spriteGR" id="date">date</div>
         <div class="fancy" id="clock">clock</div>
+        <div class="hippo" id="scoreCard"></div>
+        <div class="hippo" id="score"></div>
     </head>
-    <body style="color:white;font-family:SpriteGReg;font-size:64">
-        <br>
-        <div class="spriteGR" id="tilt">Click on the DRAW button to draw a card!</div>
-        <img src="cards/JOKER-1.svg" id="card"></img>
-        VS
-        <img src="cards/JOKER-2.svg" id="enemy"></img>
-        <br>
-        <button type="button" onclick="draw()">DRAW</button><br>
+    <body>
         <br>
         <div class="spriteGR" id="outcome"></div>
+        <div class="spriteGR" id="tilt">Click on the DRAW button<br> to start the game!</div>
+        <img src="cards/JOKER-1.svg" id="card"></img>
+        <span id='vs'>VS</span>
+        <img src="cards/JOKER-2.svg" id="enemy"></img>
+        <br>
+        <button class="block" type="button" onclick="draw()">DRAW</button><br>
+        <br>
+
         <script src="script.js"></script>
         <script src="president.js"></script>
     </body>
