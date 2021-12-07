@@ -7,7 +7,51 @@ shuffle();
 var wins = 0;
 var ties = 0;
 var loses = 0;
+var cardScale = 50;
+var winner = false;
+var input = [0];
+input = getUrlIn(window.location.href);
+var points = parseInt(input[0]);
+var lossPoints = parseInt(input[1]);
+var tiePoints = parseInt(input[2]);
 
+displayScore(points,lossPoints,tiePoints);
+
+
+function displayScore(win, lose, tie)
+{
+    document.getElementById("points").innerHTML = '<div class="hippo"> Number of Wins: '+ points +'</div>';
+    document.getElementById("loss").innerHTML = '<div class="hippo"> Number of Loses: '+ lose +'</div>';
+    document.getElementById("tie").innerHTML = '<div class="hippo"> Number of Ties: '+ tie +'</div>';
+}
+function getAllIndex(string,chara)
+{
+    var str = string;
+    var indices = [];
+    for(var i=0; i<str.length;i++) {
+        if (str[i] === chara) indices.push(i);
+    }
+    return indices;
+}
+
+function getUrlIn(url)
+{
+    var indices = getAllIndex(url,"&");
+    console.log(indices);
+    var strings = [];
+    var temp;
+    if(url.includes("?"))
+    {
+        for(var i = 0; i < indices.length; i++)
+        {
+            temp = url.substring(indices[i],indices[i+1]);
+            strings.push(temp.substring(temp.indexOf("=")+1,temp.length));
+        }
+        return strings;
+    }else {
+        return [0,0,0];
+    }
+}
 //let hands = drawPoker();
 function shuffle()
 {
@@ -16,7 +60,6 @@ function shuffle()
         swapCard(j,getRandomInt(51));
     }
 }
-
 function drawPoker()
 {
     let hand = [];
@@ -29,21 +72,57 @@ function drawPoker()
 function score()
 {
     document.getElementById("scoreCard").innerHTML = "Score:"
-    var score = document.getElementById("score")
+    var score = document.getElementById("score");
     score.innerHTML= (wins + "/" + loses + "/" + ties);
 }
 
 function draw()
 {
-    var e = document.getElementById("tilt");
-    var card = cards.shift();
+    if (cards.length === 0)
+    {
+        var body = document.getElementById("body");
+        var result = "";
+        var output = "";
+        var fancyURL = "";
+        var colour = "";
+        if(wins>loses)
+        {
+            colour = "light_green";
+            result = "winner";
+            points ++;
+        }else if(wins == loses)
+        {
+            colour = "yellow";
+            result = "tie";
+            tiePoints++;
+        }else{
+            colour = "red";
+            result = "loser";
+            lossPoints++;
+        }
+        console.log(lossPoints);
+        output += '<h1 class="spriteGR" style="color:'+ colour + '">' +result+ '</h1>';
 
-
-    e.innerHTML = getCardName(card);
-    cardDisplay(card,"card")
-    enemyDraw(card);
-    score();
-    return getCardName(card);
+        if(window.location.href.includes("?"))
+        {
+            fancyURL += (window.location.href.substring(0,window.location.href.indexOf("?")) + '?&score=' + points + '&loss=' + lossPoints + '&tie=' + tiePoints);
+        }
+        else{
+            fancyURL = window.location.href + '?&score=' + points + '&loss=' + lossPoints + '&tie=' + tiePoints;
+        }
+        //output += "<br><a href=\'" + fancyURL + "\'>Reset</a>";
+        output += "<br><a id=\"reset\" href=\"" + fancyURL+ "\">Click here to reset!</a>"
+        console.log(output);
+        body.innerHTML = output;
+    }else{
+        var e = document.getElementById("tilt");
+        var card = cards.shift();
+        e.innerHTML = getCardName(card);
+        cardDisplay(card,"card",cardScale);
+        enemyDraw(card);
+        score();
+        return getCardName(card);
+    }
 }
 function enemyDraw(player)
 {
@@ -69,15 +148,12 @@ function enemyDraw(player)
         loses++;
     }
     e.innerHTML = getCardName(card);
-    cardDisplay(card,"enemy")
+    cardDisplay(card,"enemy",cardScale)
     return card;
 }
-
-
-function cardDisplay(card,id)
+function cardDisplay(card,id,scale)
 {
     document.getElementById(id).src="cards/"+card+".svg";
-
 }
 
 function getRandomInt(max) {

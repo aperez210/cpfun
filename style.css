@@ -26,12 +26,15 @@ body{text-align:center;background-color:#0437f2;margin:0;}
   margin: 4px 2px;
   border-radius: 12px;
 }
+#reset{font-family:Hippo;color:#0437f2;padding-top:0px;font-size:65px;background:white;}
+#card{width: 10%; height: 10%;}
+#enemy{width: 10%; height: 10%;}
 #vs{font-size:60px;font-family:Hippo; min-height: 400px;color: white;align-items: center;vertical-align: middle;}
-#outcome{font-size:60px;}
+#outcome{font-size:30px;}
 #scoreCard{background:white;font-size:15px;color: #0437f2}
 #score{padding-top:5px;padding-bottom:0px;color:#0437f2;font-size:40px;background:white;}
-#head {padding-top:25px;padding-bottom:0px;color:#0437f2;font-size:55px;background:white;}
-#date {color:#0437f2;padding-top:0px;font-size:65px;background:white;}
-#clock {color:#0437f2;font-size:50px;background:white;}
-#tilt {font-size:50px;}
+#head {padding-top:5px;padding-bottom:0px;color:#0437f2;font-size:30px;background:white;}
+#date {color:#0437f2;padding-top:0px;font-size:30px;background:white;}
+#clock {color:#0437f2;font-size:25px;background:white;}
+#tilt {font-size:30px;}
 #rounded {  border-radius: 25px;  background: #73AD21;  padding: 20px;  width: 200px;  height: 150px;}
