@@ -80,6 +80,7 @@ function theDomHasLoaded(e) {
     var curr_date = d.getDate();
     var curr_month = d.getMonth() + 1; //months are zero based
     var curr_year = d.getFullYear();
+    
     document.getElementById("date").innerHTML = (curr_month + "/" + curr_date);
     clock();
 }

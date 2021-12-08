@@ -14,14 +14,55 @@ input = getUrlIn(window.location.href);
 var points = parseInt(input[0]);
 var lossPoints = parseInt(input[1]);
 var tiePoints = parseInt(input[2]);
+var isMobile = detectMob();
+var leaderFile = "./leaderboard.txt";
+fetch(leaderFile)
+  .then(response => response.text())
+  .then(data => {
+  	// Do something with your data
+  	console.log(data);
+  });
+//var textByLine = openFile(leaderFile).split("\n");
+
+
 
 displayScore(points,lossPoints,tiePoints);
+var openFile = function(event) {
+        var input = event.target;
 
+        var reader = new FileReader();
+        reader.onload = function(){
+          var text = reader.result;
+          var node = document.getElementById('output');
+          node.innerText = text;
+          console.log(reader.result.substring(0, 200));
+        };
+        reader.readAsText(input.files[0]);
+      };
+if(isMobile)
+{
+    console.log("is mobile");
+}
 
+function detectMob() {
+   const toMatch = [
+       /Android/i,
+       /webOS/i,
+       /iPhone/i,
+       /iPad/i,
+       /iPod/i,
+       /BlackBerry/i,
+       /Windows Phone/i
+   ];
+
+   return toMatch.some((toMatchItem) => {
+       return navigator.userAgent.match(toMatchItem);
+   });
+}
 function displayScore(win, lose, tie)
 {
     document.getElementById("points").innerHTML = '<div class="hippo"> Number of Wins: '+ points +'</div>';
-    document.getElementById("loss").innerHTML = '<div class="hippo"> Number of Loses: '+ lose +'</div>';
+    document.getElementById("loss").innerHTML = '<div class="hippo"> Number of Losses: '+ lose +'</div>';
     document.getElementById("tie").innerHTML = '<div class="hippo"> Number of Ties: '+ tie +'</div>';
 }
 function getAllIndex(string,chara)
@@ -37,7 +78,6 @@ function getAllIndex(string,chara)
 function getUrlIn(url)
 {
     var indices = getAllIndex(url,"&");
-    console.log(indices);
     var strings = [];
     var temp;
     if(url.includes("?"))
@@ -71,9 +111,10 @@ function drawPoker()
 }
 function score()
 {
-    document.getElementById("scoreCard").innerHTML = "Score:"
+    var output = "";
     var score = document.getElementById("score");
-    score.innerHTML= (wins + "/" + loses + "/" + ties);
+    output += (wins + "/" + loses + "/" + ties);
+    score.innerHTML = output;
 }
 
 function draw()
