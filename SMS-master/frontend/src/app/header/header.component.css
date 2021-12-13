@@ -1,0 +1,48 @@
+
+.header {
+  color: white;
+  height: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  /* Permalink - use to edit and share this gradient:
+  https://colorzilla.com/gradient-editor/#364150+0,111111+50,364150+100 */
+  background: #364150; /* Old browsers */
+  background: -moz-linear-gradient(left,  #364150 0%, #111111 50%, #364150 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #364150 0%,#111111 50%,#364150 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #364150 0%,#111111 50%,#364150 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#364150', endColorstr='#364150',GradientType=1 ); /* IE6-9 */
+}
+
+.app1Logo {
+  color: #fff;
+  padding: 3px 0 5px 5px;
+  font-size: 1.7em;
+  margin: 0;
+  font-family: "Verdana", san-serif;
+  text-decoration: none;
+}
+
+a.button {
+  background-color: inherit;
+  border: 1px solid #919191;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f7f7f7;
+  padding: 7px 14px 7px 14px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-transition: 200ms all linear;
+  -moz-transition: 200ms all linear;
+  -o-transition: 200ms all linear;
+  transition: 200ms all linear;
+  background-image: none;
+}
+
+
+a.button:hover {
+  background-color: black;
+  color: white;
+  border-color: #f9f9f9;
+}

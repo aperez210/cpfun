@@ -1,0 +1,1 @@
+insert into sdb.payment (studentID, paymentDate, paymentAmount, previousBalance) values (22, '2021-11-30', 120, 120);

@@ -1,0 +1,25 @@
+### Ignore Intellij specific files ###
+.idea/*
+/.idea/
+*.iml
+
+## File-based project format:
+*.iws
+
+## Ignore compiled files in the target directory
+/target/
+
+## Ignore node_modules directory
+frontend/node_modules/*
+frontend/web/index.jsp
+frontend/node/*
+frontend/target/*
+
+# Ignore frontend/dist directory
+frontend/dist/*
+
+# Ignore the target directories foudn in backend
+backend/target/*
+
+# Ignore the target directories found in db-migrations
+db-migrations/target/*

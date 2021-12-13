@@ -1,0 +1,105 @@
+<mat-card>
+  <mat-card-title>Add User</mat-card-title>
+
+  <mat-card-content>
+    <form #form="ngForm" novalidate autocomplete="off">
+
+      <mat-form-field>
+        <mat-label>Type of User</mat-label>
+
+        <!-- Use the matNativeControl for select and input fields inside <mat-form-field>...</mat-form-field> tags -->
+        <select matNativeControl name="report.role" [(ngModel)]="report.role">
+          <option [value]=null>--</option>
+          <option [value]=100>Accountant</option>
+          <option [value]=101>Administrator</option>
+          <option [value]=102>Director</option>
+          <option [value]=102>Teacher</option>
+          <option [value]=102>Student</option>
+        </select>
+      </mat-form-field>
+
+      <br/>
+
+      <mat-form-field>
+        <label>First Name</label>
+
+        <!-- Use the matInput for input fields inside <mat-form-field>...</mat-form-field> tags -->
+        <input matInput type="text" name="report_name"  [(ngModel)]="report.fname" required #name="ngModel" />
+
+        <mat-error>
+          <!-- This mat-error tag is displayed if this form field is invalid AND touched -->
+          Report Name is required
+        </mat-error>
+
+      </mat-form-field>
+
+      <ng-container  *ngIf="form.controls.report_name?.touched && form.controls.report_name?.errors==null">
+        <!-- The user visited this form field and filled-it in correctly -->
+        <div style="display:inline; margin-left: 5px">
+          <i class="fa fa-check checkbox-color"></i>
+        </div>
+      </ng-container>
+
+      <br/>
+
+      <mat-form-field>
+        <label>Last Name</label>
+
+        <!-- Use the matInput for input fields inside <mat-form-field>...</mat-form-field> tags -->
+        <input matInput type="text" name="report_name"  [(ngModel)]="report.lname" required #name="ngModel" />
+
+        <mat-error>
+          <!-- This mat-error tag is displayed if this form field is invalid AND touched -->
+          Report Name is required
+        </mat-error>
+
+      </mat-form-field>
+
+      <ng-container  *ngIf="form.controls.report_name?.touched && form.controls.report_name?.errors==null">
+        <!-- The user visited this form field and filled-it in correctly -->
+        <div style="display:inline; margin-left: 5px">
+          <i class="fa fa-check checkbox-color"></i>
+        </div>
+      </ng-container>
+
+      <br/>
+
+      <mat-form-field>
+        <label>School</label>
+
+        <!-- Use the matNativeControl for select and input fields inside <mat-form-field>...</mat-form-field> tags -->
+        <select matNativeControl name="report.source" [(ngModel)]="report.source">
+<!--          <option [value]=null>-Select Source-</option>-->
+<!--          <option [value]=100>Israel</option>-->
+<!--          <option [value]=101>United Kingdom</option>-->
+<!--          <option [value]=102>USA</option>-->
+        </select>
+      </mat-form-field>
+      <br/>
+
+
+
+      <!-- Reset Button -->
+      <button type="button" (click)="reset(form)" style="margin-top: 20px"
+              mat-raised-button>
+        <i class="fa fa-backspace"></i>
+        Reset
+      </button>
+
+      <!-- Save Button -->
+      <button type="button" (click)="save(form)" mat-raised-button color="primary"
+              [disabled]="this.formSubmitted && form.invalid">
+        <i class="fa fa-plus"></i>
+        Save
+      </button>
+
+    </form>
+  </mat-card-content>
+
+
+  <pre>
+ report={{report | json}}
+            </pre>
+
+</mat-card>
+

@@ -1,0 +1,98 @@
+/*background image for page*/
+body{
+    background-image: url("Redo3.png");
+}
+
+/*menu option*/
+.shape1{
+    height: 800px;
+    width: 300px;
+    background-color: #C4C4C4;
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    opacity: 70%;
+    position: relative;
+}
+
+/* Shape for background*/
+.shape2{
+    position: absolute;
+    height: 800px;
+    width: 850px;
+    left: 400px;
+    top: 20px;
+    background-color: #C4C4C4;
+    opacity: 70%;
+}
+
+/*Text for chats*/
+.chatsText{
+    position: absolute;
+    left: 25px;
+    font-size: 25px;
+}
+
+/*Shape for updated chats*/
+.shape3{
+    position: absolute;
+    height: 300px;
+    width: 750px;
+    top: 100px;
+    left: 450px;
+    background-color: #C4C4C4;
+    z-index: 1;
+}
+
+/*Chat box*/
+.container{
+    position: absolute;
+    width:750px;
+    height: 250px;
+    left: 450px;
+    top: 450px;
+    background-color: white;
+    z-index: 1;
+    font-size: 20px;
+}
+
+/*Publish button for chat box*/
+.button{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    left: 1090px;
+    top: 725px;
+    z-index: 1;
+    font-size: 15px;
+}
+
+.Dashboard{
+    top: 200px;
+}
+
+.Classes{
+    top: 275px;
+}
+
+.Tuition{
+    top: 350px;
+}
+
+.Profile{
+    top: 425px;
+}
+
+.Logout{
+    top: 500px;
+}
+
+.Dashboard, .Classes, .Tuition, .Profile, .Logout{
+    text-decoration: none;
+    position: absolute;
+    left: 125px;
+    color: black;
+    font-family: "Roboto Thin";
+    font-size: 25px;
+}

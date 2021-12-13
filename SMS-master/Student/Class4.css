@@ -1,0 +1,166 @@
+body{
+    background-image: url("Redo3.png");
+}
+
+/*menu options*/
+.shape1{
+    height: 830px;
+    width: 300px;
+    background-color: #C4C4C4;
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    opacity: 70%;
+    position: relative;
+}
+
+/* Shape for background*/
+.shape2{
+    position: absolute;
+    height: 830px;
+    width: 850px;
+    left: 400px;
+    top: 20px;
+    background-color: #C4C4C4;
+    opacity: 70%;
+
+}
+
+/*Class 4 Text*/
+.class4{
+    position: absolute;
+    left: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    z-index: 2;
+}
+
+/*shape for announcements*/
+.shape3{
+    position: absolute;
+    height: 250px;
+    width: 800px;
+    left: 425px;
+    top: 75px;
+    background-color: #C4C4C4;
+    z-index: 1;
+}
+
+/*Text for announcements*/
+.announce{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    font-family: Roboto;
+}
+
+/*shape for assignments*/
+.shape4{
+    position: absolute;
+    height: 425px;
+    width: 250px;
+    left: 425px;
+    top: 375px;
+    background-color: #C4C4C4;
+    z-index: 1;
+}
+
+/*Text for assignments*/
+.assign{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+}
+
+/*shape for grades*/
+.shape5{
+    position: absolute;
+    height: 425px;
+    width: 250px;
+    left: 700px;
+    top: 375px;
+    background-color: #C4C4C4;
+    z-index: 1;
+}
+
+/*Text for grades*/
+.grade{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+}
+
+/*shape for chats*/
+.shape6{
+    position: absolute;
+    height: 200px;
+    width: 250px;
+    left: 975px;
+    top: 375px;
+    background-color: #C4C4C4;
+    z-index: 1;
+}
+
+/*Text for chats*/
+.chat{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+}
+
+/*shape for course info*/
+.shape7{
+    position: absolute;
+    height: 200px;
+    width: 250px;
+    left: 975px;
+    top: 600px;
+    background-color: #C4C4C4;
+    z-index: 1;
+}
+
+/*Text for course info*/
+.course{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+}
+
+/* space between links*/
+.name{
+    position: absolute;
+    left: 700px;
+    height: 100px;
+    width: 50px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.Dashboard{
+    top: 200px;
+}
+
+.Classes{
+    top: 275px;
+}
+
+.Tuition{
+    top: 350px;
+}
+
+.Profile{
+    top: 425px;
+}
+
+.Logout{
+    top: 500px;
+}
+
+.Dashboard, .Classes, .Tuition, .Profile, .Logout{
+    text-decoration: none;
+    position: absolute;
+    left: 125px;
+    color: black;
+    font-family: "Roboto Thin";
+    font-size: 25px;
+}

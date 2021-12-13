@@ -16,13 +16,6 @@ var lossPoints = parseInt(input[1]);
 var tiePoints = parseInt(input[2]);
 var isMobile = detectMob();
 var leaderFile = "./leaderboard.txt";
-fetch(leaderFile)
-  .then(response => response.text())
-  .then(data => {
-  	// Do something with your data
-  	console.log(data);
-  });
-//var textByLine = openFile(leaderFile).split("\n");
 
 
 

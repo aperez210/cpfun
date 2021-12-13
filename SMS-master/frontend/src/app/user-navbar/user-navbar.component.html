@@ -1,0 +1,26 @@
+<div class="navbar">
+  <mat-nav-list style="margin-top: 0; padding-top: 0">
+
+    <mat-list-item class="navItem" [routerLink]="'userInfo'" routerLinkActive="active">
+      <a title="Student Profile">User Info</a>
+      <div fxFlex fxLayoutAlign="end end">
+        <a [routerLink]="'userInfo'" target="_blank">
+          <i class="fas fa-external-link-alt navItemIcon" title="Open Add Report in a new
+window"></i>
+        </a>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="navItem" [routerLink]="'logout'" routerLinkActive="active">
+      <a title="Student Profile">Log Out</a>
+      <div fxFlex fxLayoutAlign="end end">
+        <a [routerLink]="'Logout'" target="_blank">
+          <i class="fas fa-external-link-alt navItemIcon" title="Open Add Report in a new
+window"></i>
+        </a>
+      </div>
+    </mat-list-item>
+
+
+  </mat-nav-list>
+</div>

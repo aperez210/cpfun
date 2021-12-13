@@ -1,0 +1,152 @@
+/*background image for page*/
+body{
+    background-image: url("Redo3.png");
+}
+
+/*menu option*/
+.shape1{
+    height: 800px;
+    width: 300px;
+    background-color: #C4C4C4;
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    opacity: 70%;
+    position: relative;
+}
+
+/* Shape for background*/
+.shape2{
+    position: absolute;
+    height: 800px;
+    width: 850px;
+    left: 400px;
+    top: 20px;
+    background-color: #C4C4C4;
+    opacity: 70%;
+}
+
+/*Assignment Text for shape 2*/
+.assign{
+    position: absolute;
+    left: 25px;
+    z-index: 1;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 42px;
+}
+
+/*Shape for past assignments*/
+.shape3{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: #C4C4C4;
+    left: 450px;
+    top: 150px;
+}
+
+/*Shape for current assignments*/
+.shape4{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    background-color: #C4C4C4;
+    left: 800px;
+    top: 150px;
+}
+
+/*Black rectangle for past assignments*/
+.shape5{
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    left: 450px;
+    top: 125px;
+    background-color: black;
+}
+
+/*Black rectangle for current assignments*/
+.shape6{
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 800px;
+    top: 125px;
+    background-color: black;
+}
+
+/*Text for past assignments in black rectangle*/
+.pastAssign{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+}
+
+/*Assignment 1 link*/
+.assign1{
+    position: absolute;
+    left: 90px;
+    top: 100px;
+    color: black;
+    font-size: 20px;
+}
+
+/*Assignment 2 link*/
+.assign2{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+    color: black;
+    font-size: 20px;
+}
+
+/*Assignment 3 link*/
+.assign3{
+    position: absolute;
+    left: 90px;
+    top: 300px;
+    color: black;
+    font-size: 20px;
+}
+
+/*Text for current assignments in black rectangle*/
+.currentAssign{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.Dashboard{
+    top: 200px;
+}
+
+.Classes{
+    top: 275px;
+}
+
+.Tuition{
+    top: 350px;
+}
+
+.Profile{
+    top: 425px;
+}
+
+.Logout{
+    top: 500px;
+}
+
+.Dashboard, .Classes, .Tuition, .Profile, .Logout{
+    text-decoration: none;
+    position: absolute;
+    left: 125px;
+    color: black;
+    font-family: "Roboto Thin";
+    font-size: 25px;
+}

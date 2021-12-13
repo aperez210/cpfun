@@ -1,0 +1,195 @@
+body{
+    background-image: url("Redo3.png");
+}
+
+/*menu options*/
+.shape1{
+    height: 830px;
+    width: 300px;
+    background-color: #C4C4C4;
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    opacity: 70%;
+    position: relative;
+}
+
+/* rectangle shape for tuition balance*/
+.shape2{
+    position: absolute;
+    height: 250px;
+    width: 1000px;
+    left: 400px;
+    background-color: #C4C4C4;
+    bottom: 440px;
+}
+
+.shape3{
+    position: absolute;
+    height: 525px;
+    width: 1000px;
+    left: 400px;
+    background-color: #C4C4C4;
+    top: 325px;
+}
+
+/*total payment left*/
+.total{
+    position: absolute;
+    top: 90px;
+    left: 140px;
+    z-index: 3;
+}
+
+/*Balance text*/
+.Balance{
+    position: absolute;
+    left: 500px;
+    top: 50px;
+}
+/*Due text*/
+.Due{
+    position: absolute;
+    left: 500px;
+    top: 125px;
+}
+
+/*Make a payment button*/
+.payment{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 500px;
+    top: 195px;
+
+    font-size: 15px;
+    background: #d1d6de;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*Past payments*/
+.PastPay{
+    position: absolute;
+    left: 50px;
+
+    font-size: 25px;
+    font-family: Roboto;
+}
+
+/*black circle*/
+.circle1{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: black;
+
+    display: inline-block;
+    top: 40px;
+    left: 475px;
+    z-index: 1;
+}
+
+/*pink circle*/
+.circle2{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    background-color: #7E6B6B;
+
+    display: inline-block;
+    top: 68px;
+    left: 500px;
+    z-index: 2;
+}
+
+.Dashboard{
+    top: 200px;
+}
+
+.Classes{
+    top: 275px;
+}
+
+.Tuition{
+    top: 350px;
+}
+
+.Profile{
+    top: 425px;
+}
+
+.Logout{
+    top: 500px;
+}
+
+.Dashboard, .Classes, .Tuition, .Profile, .Logout{
+    left: 125px;
+    text-decoration: none;
+    position: absolute;
+    color: black;
+    font-family: "Roboto Thin";
+    font-size: 25px;
+}
+
+/*Past Payment 6*/
+.PastpayDue6{
+    position: absolute;
+    left: 300px;
+    top: 100px;
+
+    color: black;
+    font-size: 20px;
+}
+
+/*Past Payment 5*/
+.PastpayDue5{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+
+    color: black;
+    font-size: 20px;
+}
+
+
+/*Past Payment 4*/
+.PastpayDue4{
+    position: absolute;
+    left: 300px;
+    top: 300px;
+
+    color: black;
+    font-size: 20px;
+}
+
+/*Past Payment 3*/
+.PastpayDue3{
+    position: absolute;
+    right: 200px;
+    top: 300px;
+
+    color: black;
+    font-size: 20px;
+}
+
+/* Past Payment 2*/
+.PastpayDue2{
+    position: absolute;
+    right: 200px;
+    top: 200px;
+
+    color: black;
+    font-size: 20px;
+}
+
+/* Past Payment 1*/
+.PastpayDue1{
+    position: absolute;
+    right: 200px;
+    top: 100px;
+
+    color: black;
+    font-size: 20px;
+}

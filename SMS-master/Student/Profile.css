@@ -1,0 +1,180 @@
+body{
+    background-image: url("Redo3.png");
+}
+
+/*shape for menu options*/
+.shape1{
+    height: 830px;
+    width: 300px;
+    background-color: #C4C4C4;
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    opacity: 70%;
+    position: relative;
+
+}
+
+/*shape for address info*/
+.shape2{
+    position:absolute;
+    height: 300px;
+    width: 900px;
+    left: 400px;
+    background-color: #C4C4C4;
+    top: 20px;
+    opacity: 70%;
+}
+
+/*shape for past payments*/
+.shape3{
+    position: absolute;
+    height: 450px;
+    width: 900px;
+    left: 400px;
+    background-color: #C4C4C4;
+    top: 400px;
+    Opacity: 70%;
+}
+
+/*Menu Options*/
+.Dashboard{
+    top: 200px;
+}
+
+.Classes{
+    top: 275px;
+}
+
+.Tuition{
+    top: 350px;
+}
+
+.Profile{
+    top: 425px;
+}
+
+.Logout{
+    top: 500px;
+}
+
+.Dashboard, .Classes, .Tuition, .Profile, .Logout{
+    text-decoration: none;
+    position: absolute;
+    left: 125px;
+    color: black;
+    font-family: "Roboto Thin";
+    font-size: 25px;
+}
+
+/*Address information*/
+.address{
+    position: absolute;
+    left: 100px
+}
+
+.street{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+
+.city{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.state{
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+
+.zipcode{
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+
+.editAddress{
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    left: 400px;
+    top: 225px;
+
+    font-size: 15px;
+    background: #dfe1e6;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*Past Payments*/
+.PastPay{
+    position: absolute;
+    left: 50px;
+
+    font-size: 25px;
+    font-family: Roboto;
+}
+
+/*Past Payment 6*/
+.PastpayDue6{
+    position: absolute;
+    left: 300px;
+    top: 100px;
+
+    color: black;
+    font-size: 20px;
+}
+
+/*Past Payment 5*/
+.PastpayDue5{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+
+    color: black;
+    font-size: 20px;
+}
+
+
+/*Past Payment 4*/
+.PastpayDue4{
+    position: absolute;
+    left: 300px;
+    top: 300px;
+
+    color: black;
+    font-size: 20px;
+}
+
+/*Past Payment 3*/
+.PastpayDue3{
+    position: absolute;
+    right: 200px;
+    top: 300px;
+
+    color: black;
+    font-size: 20px;
+}
+
+/* Past Payment 2*/
+.PastpayDue2{
+    position: absolute;
+    right: 200px;
+    top: 200px;
+
+    color: black;
+    font-size: 20px;
+}
+
+/* Past Payment 1*/
+.PastpayDue1{
+    position: absolute;
+    right: 200px;
+    top: 100px;
+
+    color: black;
+    font-size: 20px;
+}
