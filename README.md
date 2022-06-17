@@ -1,0 +1,2 @@
+# Welcome to the sourcefile of my card game website
+This website was meant to create a data structure for a standard deck of playing cards, but it went through so much more as experimented with HTML, CSS and JavaScript. Java was the first language I learned to code in way back in middle school, so I took to JavaScript quite well. I am quite proud of how this website turned out and I would like to extend on it further.
